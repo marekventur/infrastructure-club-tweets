@@ -1,0 +1,14 @@
+{
+  "name": "infrastructure-club-tweets",
+  "description": "Tweets out messages that got at least two 🐦",
+  "image": "heroku/python",
+  "repository": "https://github.com/marekventur/infrastructure-club-tweets",
+  "keywords": [],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    
+  },
+  "environments": {
+    
+  }
+}
