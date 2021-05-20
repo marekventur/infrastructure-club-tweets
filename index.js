@@ -3,10 +3,7 @@ var Twitter = require('twitter');
 
 const ACKS_NEEDED = 1;
 
-// For local development:
-// DATABASE_URL=postgres://xxxxx
-// SLACK_BOT_TOKEN=xoxb-xxxxx
-// SLACK_SIGNING_SECRET=xxxxx
+// For local development
 require('dotenv').config();
 
 // Initializes your app with your bot token and signing secret
@@ -50,10 +47,9 @@ slack.event("reaction_added", async({event, client, say}) => {
         const {user, id_str} = await tweet(text);
         const url = `https://twitter.com/${user.screen_name}/status/${id_str}`;
         console.log("Tweeted:", text, url);
-        console.log(message);
         await say({
           text: url,
-          thread_ts: message.ts,
+          thread_ts: message.thread_ts || message.ts,
         });
       } catch (e) {
         console.log("Twitter error:", e);
@@ -63,9 +59,7 @@ slack.event("reaction_added", async({event, client, say}) => {
 });
 
 (async () => {
-  // Start your app
   await slack.start(process.env.PORT || 3000);
-
-  console.log('⚡️ Bolt app is running!');
+  console.log('Slack bot is running');
 })();
 
