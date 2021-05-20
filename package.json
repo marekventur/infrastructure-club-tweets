@@ -20,6 +20,7 @@
     "node": "16.x"
   },
   "dependencies": {
-    "@slack/bolt": "^3.3.0"
+    "@slack/bolt": "^3.3.0",
+    "dotenv": "^9.0.2"
   }
 }

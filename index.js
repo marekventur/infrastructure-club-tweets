@@ -1,5 +1,11 @@
 const { App } = require('@slack/bolt');
 
+// For local development:
+// DATABASE_URL=postgres://xxxxx
+// SLACK_BOT_TOKEN=xoxb-xxxxx
+// SLACK_SIGNING_SECRET=xxxxx
+require('dotenv').config();
+
 // Initializes your app with your bot token and signing secret
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
