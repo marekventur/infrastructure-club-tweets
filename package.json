@@ -21,6 +21,9 @@
   },
   "dependencies": {
     "@slack/bolt": "^3.3.0",
-    "dotenv": "^9.0.2"
+    "dotenv": "^9.0.2",
+    "ngrok": "^4.0.1",
+    "twitter": "^1.7.1",
+    "uuid": "^3.4.0"
   }
 }
