@@ -1,0 +1,25 @@
+{
+  "name": "infrastructure-club-tweets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marekventur/infrastructure-club-tweets.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marekventur/infrastructure-club-tweets/issues"
+  },
+  "homepage": "https://github.com/marekventur/infrastructure-club-tweets#readme",
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.3.0"
+  }
+}
