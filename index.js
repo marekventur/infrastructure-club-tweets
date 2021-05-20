@@ -1,7 +1,7 @@
 const { App } = require('@slack/bolt');
 var Twitter = require('twitter');
 
-const ACKS_NEEDED = 1;
+const ACKS_NEEDED = 2;
 
 // For local development
 require('dotenv').config();
